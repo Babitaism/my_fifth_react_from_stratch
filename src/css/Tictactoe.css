@@ -1,0 +1,31 @@
+table, tr, td {
+    border-bottom: 1px solid;
+    border-color: blanchedalmond;
+    border-top:1px solid; 
+    border-left:1px solid;  
+    border-right: 1px solid;
+  }
+  table {
+    width: 50%;
+    border-collapse: collapse;
+  }
+  tr,td{
+    height: 20px;
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid black;  
+  }
+   td:hover {
+    cursor: pointer;
+    background-color: rgb(200, 227, 236);
+} 
+  div {
+    margin: 45px;
+  }
+  button{
+    color: blue;
+    margin-top: -100px;
+    font-size: 13px;
+    margin-left: 107px;
+  }
+ 
