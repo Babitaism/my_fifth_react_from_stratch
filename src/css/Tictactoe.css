@@ -1,9 +1,105 @@
-table, tr, td {
+table, tr, td ,th{
     border-bottom: 1px solid;
-    border-color: blanchedalmond;
+    border-color: black;
     border-top:1px solid; 
     border-left:1px solid;  
     border-right: 1px solid;
+  }
+.players{
+  padding: 0.3% 1% 1% 1%;
+}
+.playerdetails{
+margin-left: 27%;
+background-color: #C2C2E6;
+margin: -4% 28% 8% 27%;
+}
+.mat{
+  font-weight: bold;
+  margin : 45px;
+  margin-top: -60px;
+}
+.size{
+  font-weight: bold;
+  margin-left: 24%;
+}
+.start{
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid black;
+  background-color: lightgoldenrodyellow;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 35%;
+  margin-top: auto;
+}
+.player1{
+  padding: 5px 45px 10px 22px;
+  margin-top:1%
+}
+.player2{
+  padding: 5px 45px 10px 22px
+}
+.back{
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid black;
+  background-color: yellow;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: auto; 
+}
+.dashboard{
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid black;
+  background-color: teal;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: auto; 
+}
+a{
+  color: black;
+}
+.err{
+  color: red;
+}
+.win{
+ color:teal;
+ font-size: xx-large;
+ text-align: left;
+ font-weight: bold;
+ margin-left: 114px;
+}
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+  color: beige;
+}
+  .header-class{
+    background-color: #0967F1;
+    color: whitesmoke;
+    text-decoration-color: blueviolet;
+    padding: 0.3% 1% 1% 1%;
+    width: 126%;
+    text-align: center;
+    margin-left: -14%;
+    margin-top: -4%;
+    box-shadow: 9px -4px 7px 8px #C0C0EF;
+    font-family: sans-serif;
+    font-size: 277%;
   }
   table {
     width: 50%;
