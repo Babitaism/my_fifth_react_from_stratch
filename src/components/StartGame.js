@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import Tictactoe from "./Tictactoe";
 import DashBoard from "./DashBoard";
 import PlayerDetails from "./PlayerDetails";
+import UserContext from './UserContext'
+
 
 class StartGame extends React.Component {
+  static contextType = UserContext
   constructor(props) {
     super(props);
     this.state = {
@@ -18,6 +21,11 @@ class StartGame extends React.Component {
     };
   }
 
+  componentDidMount() {
+    const user = this.context
+
+    console.log(user) // { name: 'Tania', loggedIn: true }
+  }
 
   clicked(event){
     let player1 = this.props.player1name;
@@ -52,12 +60,12 @@ class StartGame extends React.Component {
 render(){
   return(
   <>
+{/* <div>{this.context.name}</div> */}
   <div className="start">
   <Link style={{textDecoration: 'none'}} to ="/playGame"
    onClick={this.clicked.bind(this)}>
    Start Game
     </Link>
-  
    </div>
    </>
   )

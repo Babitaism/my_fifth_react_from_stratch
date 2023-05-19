@@ -1,35 +1,19 @@
-
-
-class PlayerDetails {
-  getPlayerName(){
-    return 'Babita and Ashwini'
-  }
-
-  trophy(){
-    return 'is on Stage'
-  }
-}
- // new class
-
-class Winner {
-    getPlayerName(){
-        return 'Ashwini'
+function calculateSum(arr, num) {
+  let blankarray = [];
+  let len = arr.length;
+  for (let i=0;i<len;i++) {
+    let ch =""
+    for(let j = 1;j<len;j++){
+      if(num== arr[i]+arr[j]){
+        blankarray.push(arr[i]+ch+arr[j])
+      }
     }
-
-    trophy(){
-        return 'Gold medal'
+    if( num == arr[i]){
+      blankarray.push(arr[i])
     }
-
+  }
+  return blankarray
 }
 
-function getXyz(arg, arg1){
-    console.log('**************', arg, arg1)
-    //return this.getPlayerName()
-}
-
-let playerDetails = new PlayerDetails()
-let winner = new Winner()
-
-name1 = winner.getPlayerNameb()
-
-//console.log(name1)
+let x = calculateSum([1, 2, 3, 4, 5, 6],6);
+console.log(x)

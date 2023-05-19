@@ -43,6 +43,7 @@ export default class Tictactoe extends React.Component {
         <label key={`matSize_` + i}>
           <input
             type="radio"
+            
             id={matrixSizeElements[i]}
             name="matrixSize"
             value={i}
