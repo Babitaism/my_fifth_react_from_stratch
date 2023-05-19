@@ -6,6 +6,8 @@ import Tictactoe from "./Tictactoe";
 import StartGame from "./StartGame";
 import RoutingComponent from "./RoutingComponent";
 
+
+
 class PlayerDetails extends React.Component {
   constructor(props) {
     super(props);
@@ -19,8 +21,8 @@ class PlayerDetails extends React.Component {
       p1errmsgflag : false,
       p2errmsgflag: false,
       p3errmsgflag: false,
-     
     };
+  
   }
 
   componentDidMount() {
@@ -110,7 +112,6 @@ this.setState({matrixGameSize:game})
   render() {
     return (
       <div>
-
         <div className="playerdetails">
           <div>{this.playerDetails()}</div>
           <GameSize matSize={this.matSize.bind(this)}
@@ -119,6 +120,7 @@ this.setState({matrixGameSize:game})
           z= {this.state.p3errmsgflag}
            />
           <StartGame
+          name = {this.context}
             validator={this.validationCheck.bind(this)}
             player1name={this.state.player1}
             player2name={this.state.player2}

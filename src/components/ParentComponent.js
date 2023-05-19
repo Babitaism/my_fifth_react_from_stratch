@@ -6,17 +6,21 @@ import StartGame from "./StartGame"
 import GameDetails from "./GameDetails";
 import DashBoard from "./DashBoard";
 import NavigationBar from "./NavigationBar";
+import { UserProvider } from './UserContext';
 
+// const user = { name: 'Tania', loggedIn: true }
 export default class ParentComponent extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
       gameBoardSize: "",
       player1: null,
       player2: null,
-
     };
+   this.user = { name: 'Tania', loggedIn: true }
   }
+
 
   navbarTitle(PlayerDetailsTitle){
     console.log("Welcome",PlayerDetailsTitle) 
@@ -41,15 +45,19 @@ export default class ParentComponent extends React.Component {
   //  console.log(this.x)
     return (
       <div>
+       <UserProvider value={this.user}>
       <NavigationBar title={this.state.title} />
       <RoutingComponent test="hi" sizeOfGameboard = {this.gameBoard.bind(this)} tictac = {this.state.gameBoardSize} 
         setTitle = {this.navbarTitle.bind(this)} setTictactoetitle = {this.tictactoe.bind(this)}
           setDashboard = {this.setdash.bind(this)}
         />
-      </div>
+           </UserProvider>
+      </div>  
     );
+    
   }
 }
+
 
 
 
